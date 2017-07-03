@@ -8,7 +8,6 @@ $app->options('/{routes:.+}', function ($request, $response, $args) {
 
 $app->get('/info', function ($request, $response, $args) {
     phpinfo();
-    $this->logger->debug("PHPinfo");
 });
 
 //API

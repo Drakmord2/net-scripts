@@ -19,7 +19,7 @@ $arrConfig = [
 
     "rules" => [
         new \Slim\Middleware\JwtAuthentication\RequestPathRule([
-            "path" => "/",
+            "path" => "/api",
             "passthrough" => ["/api/login"]
         ]),
         new \Slim\Middleware\JwtAuthentication\RequestMethodRule([
